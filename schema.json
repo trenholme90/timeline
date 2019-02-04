@@ -1,0 +1,29 @@
+{
+    "item1": {
+        "Date": 1968,
+        "title": "Wesker's Report",
+        "text": "This is dummy text for this timeline item",
+        "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
+    },
+
+    "item2": {
+        "Date": 1976,
+        "title": "Wesker's Report",
+        "text": "This is dummy text for this timeline item",
+        "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
+    },
+
+    "item3": {
+        "Date": 1984,
+        "title": "Wesker's Report",
+        "text": "This is dummy text for this timeline item",
+        "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
+    },
+
+    "item4": {
+        "Date": 1996,
+        "title": "Wesker's Report",
+        "text": "This is dummy text for this timeline item",
+        "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
+    }
+}
