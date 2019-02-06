@@ -1,10 +1,5 @@
 <template>
-  <div class="page-container">
-    <div class="page-container__inner">
-        <Timeline></Timeline>
-    </div>
-
-  </div>
+    <Timeline></Timeline>
 </template>
 
 <script>

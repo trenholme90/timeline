@@ -1,3 +1,43 @@
+$item-height: 200px;
+
 .timeline {
-    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2f2d2d;
+
+    &__inner {
+        margin: 20px 20px 0 20px;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    &__item {
+        position: relative;
+        color: white;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        border: 3px solid white;
+        margin-bottom: $item-height;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 6px;
+            border-left: 3px solid white;
+            height: $item-height;
+        }
+
+        &:last-of-type {
+            margin-bottom: 40px;
+            &:after {
+                content: none;
+            }
+        }
+    }
 }
