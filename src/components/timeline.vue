@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-import * as json from '../../schema.json'
+import store from '../store';
 import TimelineItem from './TimelineItem'
 
 export default {
@@ -16,7 +16,7 @@ export default {
   },
   data () {
     return {
-      data: json
+      data: store.data.json
     }
   }
 }
