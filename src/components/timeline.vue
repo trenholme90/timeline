@@ -1,12 +1,14 @@
 <template>
-  <div class="timeline">
-    <div class="timeline__inner">
-      <TimelineItem v-for="item in data" :key="item"></TimelineItem>
+    <div class="timeline">
+      <div class="overlay"></div>
+      <div class="timeline__inner">
+        <TimelineItem v-for="item in timelineData" :key="item.title" :data="item"></TimelineItem>
+      </div>
     </div>
-  </div>
 </template>
 <script>
-import store from '../store';
+
+import store from '../store'
 import TimelineItem from './TimelineItem'
 
 export default {
@@ -16,7 +18,7 @@ export default {
   },
   data () {
     return {
-      data: store.data.json
+      timelineData: store.state.data
     }
   }
 }

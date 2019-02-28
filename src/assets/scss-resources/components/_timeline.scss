@@ -1,43 +1,125 @@
-$item-height: 200px;
+
 
 .timeline {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #2f2d2d;
+	$block: '.timeline';
+	background-color: #000;
+	color: white;
+	background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fprojectumbrella.net%2Ffiles%2Fimages%2FUmbrellaCorporation3_1.png&f=1);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: background-color 1s ease;
+	transition: background-image 1s ease;
 
-    &__inner {
-        margin: 20px 20px 0 20px;
-        height: 100vh;
-        overflow-y: scroll;
-    }
+	&__inner {
+		height: 93vh;
+    overflow-y: scroll;
+    padding: 20px;
+	}
 
-    &__item {
-        position: relative;
-        color: white;
-        width: 15px;
-        height: 15px;
-        background-color: red;
-        border-radius: 50%;
-        border: 3px solid white;
-        margin-bottom: $item-height;
+	&__block {
+		position: relative;
+		display: flex;
+		height: 75vh;
+		align-items: center;
+		transition: opacity 1s ease;
 
-        &:after {
-            content: "";
-            position: absolute;
-            top: 18px;
-            left: 6px;
-            border-left: 3px solid white;
-            height: $item-height;
-        }
+		&:last-of-type {
+			height: 75vh;
+			padding: 0;
 
-        &:last-of-type {
-            margin-bottom: 40px;
-            &:after {
-                content: none;
-            }
-        }
-    }
+			#{$block}__item:after {
+				display: none;
+			}
+		}
+	}
+
+	&__item {
+		// position: relative;
+		// flex: 1 0 5%;
+		// position: absolute;
+		// top: 40%;
+		// left: 0;
+		flex: 0 0 auto;
+		color: white;
+		width: 15px;
+		height: 15px;
+		background-color: orange;
+		border-radius: 50%;
+		border: 3px solid white;
+		margin: 0 20px 0 0;
+
+		.timeline__block--reverse & {
+			order: 2;
+		}
+
+		&:before {
+			content: "";
+		}
+		
+		&:after {
+				content: "";
+				position: absolute;
+				top: 51.5%; // creates 100% with bottom
+				left: 9px;
+				bottom: -48.5%; // creates 100% with top
+				border-left: 3px solid white;
+		}
+	}
+		
+	&__tooltip {
+		position: relative;
+		color: white;
+		opacity: 0;
+		border: 2px solid white;
+		padding: 20px;
+		// height: max-content;
+		// margin: 44% 0 50px;
+
+		&.loaded {
+			opacity: 1;
+			transition: opacity 1s ease;
+		}
+
+		.timeline__block--reverse & {
+			order: 1;
+		}
+
+		&:after {
+			position: absolute;
+			//content: "";
+			width: 0px;
+			height: 0px;
+			border-right: 15px solid white;
+			border-left: 15px solid transparent;
+			border-bottom: 15px solid transparent;
+			border-top: 15px solid transparent;
+			top: 35%;
+			left: -30px;
+			
+			.timeline__block--reverse & {
+				border-right: 15px solid white;
+				border-left: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+				border-top: 15px solid transparent;
+				top: -4px;
+				left: -30px;
+			}
+		}
+
+		&-title {
+			margin: 0;
+		}
+
+		&-date {
+			font-size: 16px;
+			font-style: italic;
+			color: orange;
+			text-decoration: underline;
+		}
+
+		&-text {
+				
+		}
+	}
 }
