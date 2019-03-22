@@ -1,29 +1,43 @@
 {
     "item1": {
-        "Date": 1968,
-        "title": "Wesker's Report",
-        "text": "This is dummy text for this timeline item",
+        "date": "Jan 30, 1933",
+        "title": "Appointment",
+        "text": "German President Paul von Hindenburg appoints Adolf Hitler, leader of the National Socialist German Workers Party (or Nazi Party for short), as chancellor of the nation-state.",
         "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
     },
 
     "item2": {
-        "Date": 1976,
-        "title": "Wesker's Report",
-        "text": "This is dummy text for this timeline item",
-        "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
+        "date": "March 23, 1933",
+        "title": "The Enabling Act",
+        "text": "The Enabling Act of 1933 is passed as an amendment to the German constitution, giving Hitler complete authoritative power over the new Nazi Germany. The Act marks the dissolution of the Reichstag, Germany’s parliament, as well as Hitler’s unofficial transition from a democratic chancellor to a totalitarian dictator.",
+        "img": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticdelivery.nexusmods.com%2Fimages%2F1704%2F7972771-1478355096.png&f=1"
     },
 
     "item3": {
-        "Date": 1984,
-        "title": "Wesker's Report",
-        "text": "This is dummy text for this timeline item",
-        "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
+        "date": "March 7, 1936",
+        "title": "Militarizing the Rhineland",
+        "text": "In its first act of military aggression under the Hitler regime, Germany violates the terms of both the 1919 Treaty of Versailles and the 1925 Locarno Pact by militarizing the Rhineland, a strictly demilitarized zone on Germany’s Western Front.",
+        "img": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticdelivery.nexusmods.com%2Fimages%2F1704%2F7972771-1478355201.png&f=1"
     },
 
     "item4": {
-        "Date": 1996,
-        "title": "Wesker's Report",
-        "text": "This is dummy text for this timeline item",
+        "date": "March 13, 1938",
+        "title": "Austria Siezed",
+        "text": "Nazi Germany completes its annexation of Austria in Anschluss Österreichs, the political unification of Austria and Germany. Austria becomes the first country to be seized by Hitler’s regime.",
         "img": "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2F0%2F1%2F544855.jpg&f=1"
-    }
+    },
+
+    "item5": {
+        "date": "September 30, 1938",
+        "title": "Signing of the Munich Pact",
+        "text": "Adolf Hitler, Italian Prime Minister Benito Mussolini, French Premier Édouard Daladier, and British Prime Minister Neville Chamberlain sign the Munich Pact. The Pact allows Nazi Germany to annex the Sudetenland, a border region of Czechoslovakia where many ethnic Germans lived, in an effort to appease Germany and prevent war.",
+        "img": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticdelivery.nexusmods.com%2Fimages%2F1704%2F7972771-1478355201.png&f=1"
+    },
+
+    "item6": {
+        "date": "March 15, 1939",
+        "title": "Breaking the Munich Pact",
+        "text": "In violation of the Munich Pact, Nazi Germany invades and occupies Bohemia and Moravia, provinces of Czechoslovakia. Political turmoil caused by Slovakian separatists' declaration of independence from Czechoslovakia left the country vulnerable and unable to resist the invasion.",
+        "img": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fstaticdelivery.nexusmods.com%2Fimages%2F1704%2F7972771-1478355201.png&f=1"
+    }  
 }
