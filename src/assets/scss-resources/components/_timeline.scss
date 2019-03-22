@@ -4,44 +4,101 @@
 	$block: '.timeline';
 	background-color: #000;
 	color: white;
-	background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fprojectumbrella.net%2Ffiles%2Fimages%2FUmbrellaCorporation3_1.png&f=1);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: background-color 1s ease;
 	transition: background-image 1s ease;
 
-	&__inner {
-		height: 93vh;
+	&__scroll-container {
+		height: 100vh;
     overflow-y: scroll;
-    padding: 20px;
+	}
+
+	&__inner {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 20px;
+
+		@media screen and (min-width: 768px) {
+			padding: 0;
+		}
 	}
 
 	&__block {
 		position: relative;
-		display: flex;
-		height: 75vh;
+		display: grid;
+		grid-template-columns: 0 15% 85%;
+		flex: 0 0 auto;
+		height: 100vh;
 		align-items: center;
 		transition: opacity 1s ease;
+		
+		
+		@media screen and (min-width: 768px) {
+			grid-template-columns: 45% 10% 45%;
+			width: 90%;
+			margin: 0 auto;
+			height: 60vh;
+		}
 
 		&:last-of-type {
-			height: 75vh;
-			padding: 0;
 
-			#{$block}__item:after {
+			.tramline {
 				display: none;
+			}
+		}
+
+		&:nth-last-of-type(2) {
+
+			.tramline {
+				bottom: -50%;
+			}
+		}
+
+		&.tooltip-swap {
+    
+			@media screen and (min-width: 768px) {
+				.timeline__tooltip-blank {
+					order: 3;
+				}
+				
+				.timeline__item {
+					order: 2;
+				}
+				
+				.timeline__tooltip {
+					order: 1;
+				}
 			}
 		}
 	}
 
 	&__item {
-		// position: relative;
-		// flex: 1 0 5%;
-		// position: absolute;
-		// top: 40%;
-		// left: 0;
-		flex: 0 0 auto;
-		color: white;
+		display: flex;
+		align-items: center;
+		position: relative;
+		height: 100%;
+		
+		.tramline {
+				position: absolute;
+				top: 50%;
+				left: 9px;
+				bottom: -100%;
+				border-left: 3px solid white;
+
+				@media screen and (min-width: 768px) {
+					top: 51%;
+					left: 49.9%;
+					bottom: -49%;
+				}
+		}
+	}
+
+	&__dot {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
 		width: 15px;
 		height: 15px;
 		background-color: orange;
@@ -49,40 +106,23 @@
 		border: 3px solid white;
 		margin: 0 20px 0 0;
 
-		.timeline__block--reverse & {
-			order: 2;
-		}
-
-		&:before {
-			content: "";
-		}
-		
-		&:after {
-				content: "";
-				position: absolute;
-				top: 51.5%; // creates 100% with bottom
-				left: 9px;
-				bottom: -48.5%; // creates 100% with top
-				border-left: 3px solid white;
+		@media screen and (min-width: 768px) {
+			margin: 0 auto;
 		}
 	}
 		
 	&__tooltip {
 		position: relative;
+		display: flex;
+		flex-direction: column;
 		color: white;
 		opacity: 0;
 		border: 2px solid white;
 		padding: 20px;
-		// height: max-content;
-		// margin: 44% 0 50px;
 
 		&.loaded {
 			opacity: 1;
 			transition: opacity 1s ease;
-		}
-
-		.timeline__block--reverse & {
-			order: 1;
 		}
 
 		&:after {
@@ -119,7 +159,12 @@
 		}
 
 		&-text {
-				
+			// @media screen and (min-width: 768px) {
+			// 	padding-bottom: 200px;
+			// }
+		}
+		&-blank {
+			display: flex;
 		}
 	}
 }

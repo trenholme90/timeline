@@ -1,8 +1,10 @@
 <template>
     <div class="timeline">
       <div class="overlay"></div>
-      <div class="timeline__inner">
-        <TimelineItem v-for="item in timelineData" :key="item.title" :data="item"></TimelineItem>
+      <div class="timeline__scroll-container">
+        <div class="timeline__inner">
+          <TimelineItem v-for="item in timelineData" :key="item.title" :data="item"></TimelineItem>
+        </div>
       </div>
     </div>
 </template>
