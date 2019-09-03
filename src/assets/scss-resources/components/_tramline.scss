@@ -1,0 +1,23 @@
+
+// Container of tramline needs to have position: relative;
+
+.tramline,
+.tramline__fill {
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  bottom: -100%;
+  border-left: 3px solid white;
+
+  @media screen and (min-width: 768px) {
+    top: 51%;
+    left: 49.9%;
+    bottom: -49%;
+  }
+
+  &__fill {
+    bottom: unset;
+    border-left: 3px solid orange;
+    transition: bottom 0.5s ease;
+  }
+}
