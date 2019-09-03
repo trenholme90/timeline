@@ -1,6 +1,14 @@
-# resi-timeline
+# Timeline
 
-> A Vue.js project
+I just wanted to make a cool timeline application
+
+Tools:
+
+- Vue.js
+- Sass
+- ES6
+
+A timeline that shows content only when it is in view for the user. It is a responsive design with a different layout on mobile compared to desktop and tablet.
 
 ## Build Setup
 
